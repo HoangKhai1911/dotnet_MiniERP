@@ -1,0 +1,22 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+
+# Database (Nếu bạn dùng SQL Express file hoặc SQLite)
+*.mdf
+*.ldf
+*.db
+*.db-shm
+*.db-wal
+
+# User-specific files
+appsettings.Development.json
+*.user
+
+# Publish output
+publish/
+
+# EF Core migrations (Không nên ignore nếu muốn đồng bộ DB, nhưng thường ignore log)
+*.log

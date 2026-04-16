@@ -1,0 +1,24 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+
+# Test results (Kết quả chạy test)
+TestResults/
+*.trx
+*.xml
+*.json
+
+# Code Coverage (Báo cáo độ phủ code)
+*.codecoverage
+*.coverage
+coverage/
+TestResults/
+
+# User-specific files
+*.user
+appsettings.Development.json
+
+# MSBuild logs
+*.log

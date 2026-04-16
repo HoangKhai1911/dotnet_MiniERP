@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+
+      - name: Restore
+        run: dotnet restore ./MiniErp.Api/MiniErp.Api.csproj
+
+      - name: Build
+        run: dotnet build --no-restore -c Release ./MiniErp.Api/MiniErp.Api.csproj
+
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+
+      - name: Publish
+        run: dotnet publish -c Release -o out ./MiniErp.Api/MiniErp.Api.csproj
+
+      - name: Build Docker image
+        run: docker build -t ${{ github.repository }}:latest -f MiniErp.Api/Dockerfile .
