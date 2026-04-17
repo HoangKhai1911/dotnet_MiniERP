@@ -6,7 +6,7 @@
 ---
 
 ## 🚀 Tech stack
-- **Backend:** ASP.NET Core 7 Web API, Entity Framework Core
+- **Backend:** ASP.NET Core 8 Web API, Entity Framework Core
 - **Auth:** ASP.NET Identity + JWT
 - **Database:** SQL Server (Docker container)
 - **Frontend:** React + TypeScript (placeholder)
