@@ -1,7 +1,7 @@
 # Mini ERP — Quản lý bán hàng & kho
 
 **Mục tiêu:** Xây dựng MVP ERP nhỏ cho doanh nghiệp vừa và nhỏ, quản lý sản phẩm, kho, đơn nhập/xuất, đơn bán.  
-**Ứng dụng:** Dùng để demo kỹ năng ASP.NET Core, EF Core, JWT, Docker, CI/CD trong CV intern.
+**Ứng dụng:** Dùng để demo kỹ năng ASP.NET Core, EF Core, JWT, Docker, CI/CD
 
 ---
 
